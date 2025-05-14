@@ -1,0 +1,155 @@
+/* Контейнер всей страницы */
+.iphone-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 100px 80px;
+  background: #ffffff; /* ЧИСТО белый фон */
+  color: #000000; /* Чёрный цвет текста */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+@media (max-width: 768px) {
+  .iphone-details-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .thumbnail-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+
+  .iphone-info {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-chip {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
+/* Левая часть — изображения */
+.iphone-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Основное изображение (без белого фона и без padding) */
+.main-image {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Миниатюри */
+.thumbnail-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.thumbnail.active {
+  border-color: #0071e3;
+}
+
+/* Правая часть — инфо */
+.iphone-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.iphone-info h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Чипы памяти и SIM */
+.info-chip {
+  padding: 8px 14px;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  width: fit-content;
+  color: #000000;
+}
+
+/* Цвет */
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+/* Линия */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 24px 0;
+}
+
+/* Ціна */
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+/* Кнопка */
+.add-to-cart {
+  padding: 12px 20px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #005bb5;
+}

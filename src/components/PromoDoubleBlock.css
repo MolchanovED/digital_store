@@ -1,0 +1,72 @@
+.double-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #f5f5f7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.double-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+  background-color: #f5f5f7;
+}
+
+
+.double-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 100%;
+  background: linear-gradient(to bottom, #2A2A2A, #000000);
+  z-index: 10;
+}
+
+.double-card h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  margin: 0 0 20px;
+  color: #1d1d1f;
+}
+
+.double-card h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 30px;
+  color: #1d1d1f;
+}
+
+.double-button {
+  display: inline-block;
+  background-color: #0071e3;
+  color: #fff;
+  padding: 11px 22px;
+  font-size: 17px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  transition: background-color 0.3s;
+  margin-bottom: 30px;
+}
+
+.double-button:hover {
+  background-color: #005bb5;
+}
+
+.double-image {
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}

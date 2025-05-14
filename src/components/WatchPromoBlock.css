@@ -1,0 +1,75 @@
+.watch-block {
+  background-color: #000;
+  color: #f5f5f7;
+  text-align: center;
+  padding: 80px 20px 0; /* убрали нижний padding */
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-block h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #d2d2d7;
+}
+
+.watch-block h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #d2d2d7;
+}
+
+.watch-button {
+  display: inline-block;
+  background-color: #0071e3;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  z-index: 2;
+  position: relative;
+}
+
+.watch-button:hover {
+  background-color: #005bb5;
+}
+
+.watch-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  margin-top: -20px;
+  transform: translateY(20px); 
+}
+
+@media (max-width: 768px) {
+  .watch-block h1 {
+    font-size: 40px;
+  }
+
+  .watch-block h2 {
+    font-size: 18px;
+  }
+
+  .watch-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .watch-image {
+    max-width: 90%;
+    transform: translateY(10px);
+  }
+}
